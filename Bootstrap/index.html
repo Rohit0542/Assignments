@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Harley</title>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+
+	
+	<div class="navbar navbar-default navbar-fixed-top" id="color"> 
+<div class="container">
+	<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+
+<a class="navbar-brand" href="/"><img src="images/hdLogo.png" alt="my logo"></a>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="navText active"><a href="#">Home</a></li>
+
+<li class="dropdown">
+<a href="#" class="navText dropdown-toggle" data-toggle="dropdown" >Services<strong class="caret"></strong></a>
+	<ul class="dropdown-menu">
+		<li>
+		<a href="#">Serve</a>
+		</li>
+		<li>
+		<a href="#">Engine replacement</a>
+		</li>
+		<li>
+		<a href="#">Dealer</a>
+		</li>
+		<li class="divider"></li>
+		<li class="dropdown-header">More services</li>
+		<li>
+	<a href="#">Museum</a>
+	</li>
+	<li>
+	<a href="#">Stylist accessory</a>
+	</li>
+	<li>
+	<a href="#">Media touch</a>
+	</li>
+		
+		
+	</ul>
+</li>
+</ul>
+
+
+<form class="navbar-form pull-left" id="search">
+<input type="text" class="form-control" placeholder="Search the content...." id="searchinput"> 
+<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" ></span></button>
+	
+</form>
+<ul class="nav navbar-nav pull-right">
+<li>
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navText"><span class="glyphicon glyphicon-user"></span>My account<strong class="caret"></strong></a>
+	<ul class="dropdown-menu">
+		<li>
+	<a href="#"><span class="glyphicon glyphicon-wrench"></span>Setting</a>
+	</li>
+	<li>
+	<a href="#"><span class="glyphicon glyphicon-refresh"></span>update profile</a>
+	</li>
+	<li>
+	<a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a>
+	</li>
+	<li class="divider"></li>
+	<li>
+	<a href="#"><span class="glyphicon glyphicon-off"></span>Sign out</a>
+	</li>
+
+	</ul>
+</li>	
+
+</ul>
+	
+</div>	
+
+</div>
+
+</div>
+
+
+    <div class="carousel slide" data-ride="carousel" id="myCarousel">
+    <!--Indicator-->
+    <ol class="carousel-indicators">
+    <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+    <li data-slide-to="1" data-target="#myCarousel"></li>
+    <li data-slide-to="2" data-target="#myCarousel"></li>
+    <li data-slide-to="3" data-target="#myCarousel"></li>
+    <li data-slide-to="4" data-target="#myCarousel"></li>
+    	
+
+    </ol>
+
+    <!--wrapper for slides-->
+    <div class="carousel-inner">
+    <div class="item active" id="slide1">
+    <img src="images/composer4.jpg" alt="Slideimage 1">
+    <div class="carousel-caption">
+    <h4>ATTITUDE ADJUSTMENT</h4>
+    <p>The new iron 883TM</p>
+    	
+    </div><!--end of carousel caption-->
+    	
+    </div><!--end items-->
+
+    <div class="item" id="slide2">
+    <img src="images/composer2.jpg" alt="Slideimage 2">
+    <div class="carousel-caption">
+    <h4>UNDERSTATEMENT OF INTENT</h4>
+    <p>Discover dark custom</p>
+    	
+    </div><!--end of carousel caption-->
+    	
+    </div><!--end items-->
+
+    <div class="item" id="slide3">
+    <img src="images/composer3.jpg" alt="Slideimage 3">
+    <div class="carousel-caption">
+    <h4>IT'S BEEN ONE HELL OF JOURNEY</h4>
+    <p>The new heritage softail classic</p>
+    	
+    </div><!--end of carousel caption-->
+    	
+    </div><!--end items-->
+    <div class="item" id="slide4">
+    <img src="images/composer1.jpg" alt="Slideimage 4">
+    <div class="carousel-caption">
+    <h4>CALLING ALL BELIEVERS</h4>
+    <p>Know your bike decode</p>
+    	
+    </div><!--end of carousel caption-->
+    	
+    </div><!--end items-->
+
+    	
+    </div><!--carousel inner-->
+    <!--controls-->
+    <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+
+    <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+
+
+    </div><!--end mycarousel-->
+
+    <div class="container">
+	    <div class="row" id="bigCallout">
+		    <div class="col-12">
+			    <div class="alert alert-warning alert-dismissible" id="successAlert">
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+	</div>
+			    <div class="well well-small visible-sm visible-xs">
+			    <a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span>Give us a call</a>
+			    	
+			    </div><!--end well small-->
+	             <div class="well">
+		             <div class="page-header">
+		             	<h1>Calling out all Believers  <small>Passion to show the guts</small></h1>
+		             </div><!--end header-->
+	                       <p class="listtext lead">
+	                       	As one of two major American motorcycle manufacturers to survive the Great Depression (along with Indian),the company has survived numerous ownership arrangements, subsidiary arrangements (e.g., Aermacchi 1974-1978 and Buell 1987-2009), periods of poor economic health and product quality, as well as intense global competition — to become the world's fifth largest motorcycle manufacturer and an iconic brand widely known for its loyal following — with owner clubs and events worldwide as well as a company sponsored brand-focused museum.
+	                       </p>
+
+	                       <a href="#" class="btn btn-large btn-primary" id="alertMe">Click to know more</a>
+
+	                       <a href="#" class="btn btn-large btn-primary">See the models</a>
+
+	             	
+	             </div><!--end well-->
+		    	
+		    </div><!--end col-12-->
+
+	    </div><!--end bigcallout-->
+	    
+	    <div class="row" id="featuresHeading">
+	    <div class="col-12">
+	    <h2>Potentials</h2>
+		    <p class="lead">
+		     Rules never gonna be changed for the bikers.
+		    </p>
+	    	
+	    </div><!--end of col-12-->
+	    </div><!--end of features Heading-->
+
+	   <div class="row" id="features"> 
+  <div class="col-sm-4 feature">
+	  <div class="panel panel-default" id="panel">
+	  <div class="panel-heading">
+	      <h3 class="pannel-title">Store</h3>
+	  </div><!--end of panel headinh-->
+       <img src="images/grid1.jpg" alt="Section image" class="boxes">
+       <a href="http://www.harleydavidson.com" target="_blank" class="btn btn-warning btn-block">Visit our Store</a>
+	  	
+	  </div><!--end of pannel-->
+   
+      
+    </div><!--end of feature-->
+    <div class="col-sm-4 feature">
+	  <div class="panel panel-default">
+	  <div class="panel-heading">
+	      <h3 class="pannel-title">Design</h3>
+	  </div><!--end of panel headinh-->
+       <img src="images/grid2.jpg" alt="Section image" class="boxes">
+       <a href="www.harleydavidson.com" target="_blank" class="btn btn-warning btn-block">Know more about Design</a>
+	  	
+	  </div><!--end of pannel-->
+   
+      
+    </div><!--end of feature-->
+    <div class="col-sm-4 feature">
+	  <div class="panel panel-default">
+	  <div class="panel-heading">
+	      <h3 class="pannel-title">Drive and Feel</h3>
+	  </div><!--end of panel headinh-->
+       <img src="images/grid3.jpg" alt="Section image" class="boxes">
+       <a href="http://www.harley-davidson.com/museum" target="_blank" class="btn btn-warning btn-block">Take test drive</a>
+	  	
+	  </div><!--end of pannel-->
+   
+      
+    </div><!--end of feature-->
+</div><!--end of features-->
+
+	
+	<div class="row" id="moreInfo">
+		<div class="col-sm-6">
+		<h3>Tabbable content</h3>
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+				<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+				<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+					
+				</ul><!--end of nav nav-tabs-->
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+						<h4><span class="glyphicon glyphicon-map-marker"></span>Our Location<small>Bangaluru</small></h4>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194805.87245912268!2d-75.5267213542198!3d40.279265264457685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c41fd09f6706bf%3A0xbc9ef100ec695c8b!2sHannum&#39;s+Harley-Davidson+of+Sellersville!5e0!3m2!1sen!2sca!4v1470721013538" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<p class="listtext lead">
+								In 1901, 20-year-old William S. Harley drew up plans for a small engine with a displacement of 7.07 cubic inches (116 cc) and four-inch (102 mm) flywheels.[8] The engine was designed for use in a regular pedal-bicycle frame. Over the next two years, Harley and his childhood friend Arthur Davidson worked on their motor-bicycle using the northside Milwaukee machine shop at the home of their friend, Henry Melk. It was finished in 1903 with the help of Arthur's brother, Walter Davidson. Upon testing their power-cycle, Harley and the Davidson brothers found it unable to climb the hills around Milwaukee without pedal assistance. They wrote off their first motor-bicycle as a learning experiment.In 1906, Harley and the Davidson brothers built their first factory on Chestnut Street (later Juneau Avenue),[12] at the current location of Harley-Davidson's corporate headquarters. The first Juneau Avenue plant was a 40 ft × 60 ft (12 m × 18 m) single-story wooden structure. The company produced about 50 motorcycles that year.In January 1905, small advertisements were placed in the Automobile and Cycle Trade Journal offering bare Harley-Davidson engines to the do-it-yourself trade. By April, complete motorcycles were in production on a very limited basis. 
+							</p>
+							
+						</div><!--end of tab pane-->
+
+
+							<div class="tab-pane" id="tab2">
+							<h4>Harley davidson <small> History facts</small></h4>
+                             <img src="images/king.jpg" class="thumbnail pull-left" alt="section 2 logo">
+	                             <p class="listtext lead">
+	                             	Work immediately began on a new and improved second-generation machine. This first "real" Harley-Davidson motorcycle had a bigger engine of 24.74 cubic inches (405 cc) with 9.75 inches (25 cm) flywheels weighing 28 lb (13 kg). The machine's advanced loop-frame pattern was similar to the 1903 Milwaukee Merkel motorcycle (designed by Joseph Merkel, later of Flying Merkel fame). The bigger engine and loop-frame design took it out of the motorized bicycle category and marked the path to future motorcycle designs. The boys also received help with their bigger engine from outboard motor pioneer Ole Evinrude, who was then building gas engines of his own design for automotive use on Milwaukee's Lake Street.
+	                             	In 1907, William S. Harley graduated from the University of Wisconsin–Madison with a degree in mechanical engineering. That year additional factory expansion came with a second floor and later with facings and additions of Milwaukee pale yellow ("cream") brick. With the new facilities production increased to 150 motorcycles in 1907. The company was officially incorporated that September. They also began selling their motorcycles to police departments around this time, a market that has been important to them ever since.Production in 1905 and 1906 were all single-cylinder models with 26.84 cubic inches (440 cc) engines. In February 1907 a prototype model with a 45-degree V-Twin engine was displayed at the Chicago Automobile Show. Although shown and advertised, very few V-Twin models were built between 1907 and 1910. These first V-Twins displaced 53.68 cubic inches (880 cc) and produced about 7 horsepower (5.2 kW). This gave about double the power of the first singles. Top speed was about 60 mph (100 km/h). Production jumped from 450 motorcycles in 1908 to 1,149 machines in 1909.
+	                             	</p>
+	                             <hr>
+	                             <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click for Modal window</a>
+
+		                             <div class="modal fade" id="myModal">
+			                             <div  class="modal-dialog">
+				                             <div class="modal-content">
+					                             <div class="modal-header">
+					                             <button class="close" data-dismiss="modal">&times;</button>
+					                             <h4 class="modal-title">Modal window for Query</h4>
+
+					                             	
+					                             </div><!--end of modal header-->
+						                             <div class="modal-body">
+						                             <h4>Benefits of registering with us</h4>
+							                             <p>
+							                             <ul>
+							                             	<li>Sign up for email to get the latest buzz on our motorcycles, promotions, events and more.</li>
+                                                            <li>Access exclusive content with your H.O.G. and H-D Museum Memberships.
+                                                            Tell us about yourself so we can provide you information about the topics you're most interested in.</li>
+                                                         </ul>
+							                             </p>
+							                             <hr>
+							                             <p><small class="text-muted">Th@nks for your time</small></p>
+								                             <form class="form-horizontal">
+								                             <div class="form-group">
+								                             <label class="col-lg-2 control-label" for="inputName">Name</label>
+								                             <div class="col-lg-10">
+								                             <input class="form-control" id="inputName" placeholder="Name" type="text">
+
+
+								                             </div>
+								                             </div>
+
+								                              <div class="form-group">
+								                             <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+								                             <div class="col-lg-10">
+								                             <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+
+
+								                             </div>
+								                             </div>
+
+								                              <div class="form-group">
+								                             <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+								                             <div class="col-lg-10">
+								                             <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+								                             <button class="btn btn-success pull-right" type="submit">Submit</button>
+								                             
+
+
+								                             </div>
+								                             </div>
+								                            
+								                             </form>
+
+
+
+
+						                             	
+						                             </div><!--end of modal body-->
+				                             	
+				                             </div><!--end of modal content-->
+			                             	
+			                             </div><!--end modal dialog-->
+
+		                             	
+		                             </div><!--end myModal-->
+								
+							</div><!--end of tab pane 2-->
+						
+					</div><!--end of tab content-->
+				
+			</div><!--end of tabbable-->
+			
+		</div><!--end of col-sm-6-->
+
+			<div class="col-sm-6">
+			<h3>Prototype design of harley</h3>
+				<p class="listtext">
+					The prototype of the new loop-frame Harley-Davidson was assembled in a 10 ft × 15 ft (3.0 m × 4.6 m) shed in the Davidson family backyard.[10][11] Most of the major parts, however, were made elsewhere, including some probably fabricated at the West Milwaukee railshops where oldest brother William A. Davidson was then toolroom foreman. This prototype machine was functional by September 8, 1904, when it competed in a Milwaukee motorcycle race held at State Fair Park. It was ridden by Edward Hildebrand and placed fourth. This is the first documented appearance of a Harley-Davidson motorcycle in the historical record
+				</p>
+
+				<h4>FACTS</h4>
+					<div class="list-group">
+					<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">World War 1</h4>
+					<p class="listtext list-group-item-text">In 1917,the United States entered World War I and the military demanded motorcycles for the war effort.Harleys had already been used by the military in the Pancho Villa Expedition but World War I was the first time the motorcycle had been adopted for combat service.The U.S. military purchased over 15,000 motorcycles from Harley-Davidson during World War I.</p>
+					</a>
+
+					<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">Great Depression</h4>
+					<p class="listtext list-group-item-text">The Great Depression began a few months after the introduction of their 45 cubic inch model. Harley-Davidson's sales fell from 21,000 in 1929 to 3,703 in 1933. Despite this, Harley-Davidson unveiled a new lineup for 1934, which included a flathead engine and Art Deco styling.In order to survive the remainder of the Depression, the company manufactured industrial powerplants based on their motorcycle engines. They also designed and built a three-wheeled delivery vehicle called the Servi-Car, which remained in production until 1973</p>
+					</a>
+
+					<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">World War 2</h4>
+					<p class="listtext list-group-item-text">One of only two American cycle manufacturers to survive the Great Depression,Harley-Davidson again produced large numbers of motorcycles for the US Army in World War II and resumed civilian production afterwards, producing a range of large V-twin motorcycles that were successful both on racetracks and for private buyers.</p>
+					</a>
+						
+					</div><!--end of list group-->
+				
+			</div><!--end of col-sm-6-->
+		
+	</div><!--end of more info-->
+
+	</div>
+	
+
+
+<hr/>
+
+<footer><!--starting of footer-->
+
+<div class="container">
+<!--section divided into 3 parts-->
+<div class="listtext col-sm-4">
+<h4>Explore Harley</h4><!--heading tag-->
+<ul>
+	<li><a href="#">Finance</a></li>
+	<li><a href="#">Help</a></li>
+	<li><a href="#">Careers</a></li>
+	<li><a href="#">Help</a></li>
+	<li><a href="#">Disclaimer</a></li>
+	<li><a href="#">Policy</a></li>
+	<li><a href="#">Store</a></li>
+	<li><a href="#">Newsroom</a></li>
+	
+</ul>
+
+</div><!--1st grid-4 end-->
+<div class="listtext col-sm-4">
+<h4>Features</h4><!--heading tag-->
+<ul>
+	<li><a href="#">Harley connect</a></li>
+	<li><a href="#">Effect</a></li>
+	<li><a href="#">Rules</a></li>
+	<li><a href="#">Motorsport</a></li>
+	<li><a href="#">ultra</a></li>
+	<li><a href="#">design</a></li>
+	<li><a href="#">MMI</a></li>
+	<li><a href="#">Biker</a></li>
+	
+</ul>
+
+
+		  	
+
+</div><!--2nd grid-4 section end-->
+<div class="col-sm-4">
+<h4>Follow us on</h4>
+
+<!--this are the socila media images-->
+    <a href="http://www.facebook.com"><img src="images/fb.jpg" title="Facebook" alt="Facebook logo"></a>
+    <a href="http://www.twitter.com"><img src="images/twt.jpg" title="Twitter" alt="Twitter logo"></a>
+    <a href="http://www.instagram.com"><img src="images/ins.jpg" title="Instagram" alt="Instagram logo"></a>
+    <a href="http://www.googleplus.com"><img src="images/gplus.PNG"  title="Googleplus" alt="Googleplus logo"></a>
+
+		  	</div><!--3rd grid-4 section end-->
+		  	
+		  	</div>
+		  	
+		  	</footer><!--footer ending-->
+
+		  	
+            
+
+
+
+
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
