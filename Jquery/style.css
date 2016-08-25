@@ -1,0 +1,147 @@
+
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#head
+{
+   font-size: 20px;
+}
+
+#searchMovie
+{
+   margin-top: 10px;
+   font-size: 20px;
+}
+#results
+{
+ font-size: 20px;
+
+}
+#errormsg
+{
+   font-size: 20px;
+  
+}
+/*body
+
+{
+
+    background: url(iron.jpg) no-repeat;
+}*/
+body
+{
+   background-color: lightblue;
+}
+#first
+{
+   color: darkred;
+}
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 320px) {
+   #results
+{
+ font-size: 7px;
+
+
+}
+
+   }
+
+   /* Large desktop */
+@media (max-width: 1200px) {
+
+#head
+{
+   font-size: 10px;
+}
+
+#searchMovie
+{
+   margin-top: 10px;
+   font-size: 10px;
+}
+#results
+{
+ font-size: 10px;
+
+}
+#errormsg
+{
+   font-size: 10px;
+  
+}
+}
+
+   @media (max-width: 768px) {
+   #head
+{
+   font-size: 10px;
+}
+
+#searchMovie
+{
+   margin-top: 10px;
+   font-size: 10px;
+}
+#results
+{
+ font-size: 10px;
+
+}
+#errormsg
+{
+   font-size: 10px;
+  
+}
+
+
+}
+
+
+
+@media (max-width: 480px) {
+	
+#head
+{
+   font-size: 10px;
+}
+
+#searchMovie
+{
+   margin-top: 10px;
+   font-size: 10px;
+}
+#results
+{
+ font-size: 8px;
+
+
+}
+#errormsg
+{
+   font-size: 10px;
+  
+}
+
+
+}
+
+/* Landscape phone to portrait tablet */
