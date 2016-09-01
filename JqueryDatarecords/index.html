@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My database</title>
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+		<h2 align="center" id="first">DATABASE RECORDS</h2>
+		
+	</div>
+	<div class="container">
+
+		 <h3 id="head"><label>Enter the ID to search</label></h3>
+		 <!--search field-->
+		<input  id="title" type="number" class="form-control seperator" placeholder="Enter the ID........" required>
+		</div>
+
+
+		   <!-- buttons container -->
+		   <div class="container" id="buttons" align="center">
+
+	  <button  id="add"  class="btn btn-success" data-toggle="modal" data-target="#myModal">ADD</button>
+		  <button  id="search"  class="btn btn-warning">SEARCH</button>
+		  <button  id="viewall"  class="btn btn-danger">VIEW ALL</button>
+		  
+
+		   </div>
+
+
+		   <!--Table Container -->
+		<div class="container-fluid table-responsive" >
+
+			<!--  <h3>Results</h3> -->
+			<table class="table table-bordered" id="results">
+				<thead>
+					<tr>
+					<th>ID</th>
+					<th>BALANCE</th>
+					<th>NAME</th>
+					<th>GENDER</th>	
+					<th>COMPANY</th>	
+					<th>EMAIL</th>	
+					<th>Buttons</th>
+					</tr>
+				</thead>
+				<tbody>
+				<!--Template declaration -->
+
+					<template id="id23">
+						<tr data-id="{{id}}">
+							<td>
+								<span class=" id">{{id}}</span>
+								
+							</td>
+
+
+							<td>
+								<span class="noedit balance">{{balance}}</span>
+								<input class="edit balance" type="number">
+							</td>
+
+							<td>
+								<span class="noedit name">{{name}}</span>
+								<input class="edit name" required>
+							</td>
+
+							<td>
+								<span class="noedit gender">{{gender}}</span>
+								<input class="edit gender"  maxlength="6" required>
+							</td>
+
+							<td>
+								<span class="noedit company">{{company}}</span>
+								<input class="edit company"  required>
+							</td>
+
+							<td>
+								<span class="noedit email">{{email}}</span>
+								<input class="edit email" type="email" required>
+							</td>
+
+							<td align="center">
+								<button  class="editt noedit"><span class="glyphicon glyphicon-pencil " title="Edit" ></span></button> 
+								<button data-id="{{id}}" class="remove noedit"><span class="glyphicon glyphicon-trash " title="Delete" ></span></button>
+
+								<button  class="save edit"><span class="glyphicon glyphicon-floppy-disk" title="Save"></span></button> 
+								<button  class="cancel edit"><span class="glyphicon glyphicon-remove-circle" title="Cancel"></span></button>
+								<button data-id="{{id}}" class="remove edit"><span class="glyphicon glyphicon-trash " title="Delete"></span></button>
+
+							</td>
+						</tr> <!-- end of table row -->
+
+					
+				</template><!--end of template -->
+					
+				</tbody><!-- End of table body -->
+			</table>
+		</div>  <!-- End of table container -->
+
+		
+
+		<div class="container">
+
+			<div class="modal fade" id="myModal">
+				<div  class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Registration window</h4>
+
+							
+						</div><!--end of modal header-->
+						<div class="modal-body" id="submitterr">
+							
+							<form class="form-horizontal" id="myform">
+								
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputName">BALANCE</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputbalance" placeholder="Balance" type="number" maxlength="10">
+
+
+									</div>
+								</div>
+
+
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputEmail">NAME</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputname" placeholder="Name" maxlength="8">
+
+
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputName">GENDER</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputgender" placeholder="Gender" type="text" maxlength="6">
+
+
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputName">COMPANY</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputcompany" placeholder="Company" type="text">
+
+
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputName">EMAIL</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputemail" placeholder="Email" type="email">
+
+
+									</div>
+								</div>
+
+								<div class="form-group" align="center">
+									<button class="btn btn-success"  id="submitter" data-dismiss="modal">Submit</button>
+
+									<button class="btn btn-danger" >Close</button>
+									
+
+								</div>
+
+							</div>
+							
+						</form>
+
+
+
+
+						
+					</div><!--end of modal body-->
+					
+				</div><!--end of modal content-->
+				
+			</div><!--end modal dialog-->
+
+			
+		</div><!--end myModal-->
+
+  
+  
+</div>
+<!-- Infinite scroll -->
+
+  <div id="postswrapper">
+	   <div class="item"></div>
+	   
+	   <div id="loadmoreajaxloader" style="display:none;"><center><img src="image/loading.gif" /></center></div>
+	</div><!-- end of infinite scroll div -->
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+	
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+	
+		<script type="text/javascript" src="Javascript/jquery-1.8.0.min.js"></script>
+
+		<!--style sheet-->
+		<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+
+		<!--javascript file -->
+		<script type="text/javascript" src="database.js"></script>
+
+		<!--Mustache file -->
+		
+		<script src="Javascript/mustache.js"></script>
+		
+	 
+		
+</body>
+</html>

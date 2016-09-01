@@ -1,0 +1,162 @@
+
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#buttons
+{
+   
+   margin-top: 10px;
+   margin-bottom: 10px;
+   
+}
+#first
+{
+  color: blue;
+}
+
+#head
+{
+  color: red;
+}
+
+
+
+table tr .edit
+{
+   display: none;
+}
+
+
+table tr.edit .edit
+{
+   display: initial;
+
+}
+
+table tr.edit .noedit
+{
+   display: none;
+}
+
+
+#results
+{
+ font-size: 20px;
+ color: maroon;
+
+ 
+
+}
+
+
+
+
+
+   /* Large desktop */
+@media (max-width: 1200px) {
+
+
+
+
+}
+
+/* Portrait & landscape phone */
+
+   @media (max-width: 768px) {
+
+ #results
+   {
+      font-size: 12px;
+   }
+   
+table tr .edit
+{
+   display: none;
+   font-size: 10px;
+}
+
+
+table tr.edit .edit
+{
+   display: initial;
+    font-size: 10px;
+
+}
+
+table tr.edit .noedit
+{
+   display: none;
+    font-size: 10px;
+
+
+   }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    #results
+   {
+      font-size: 12px;
+   }
+	
+table tr .edit
+{
+   display: none;
+   font-size: 10px;
+}
+
+
+table tr.edit .edit
+{
+   display: initial;
+    font-size: 10px;
+
+}
+
+table tr.edit .noedit
+{
+   display: none;
+    font-size: 10px;
+
+
+   }
+
+
+}
+
+
+@media (max-width: 320px) {
+   
+   #results
+   {
+      font-size: 12px;
+   }
+table tr .edit
+{
+   display: none;
+   font-size: 10px;
+}
+
+
+table tr.edit .edit
+{
+   display: initial;
+    font-size: 12px;
+    
+
+}
+
+table tr.edit .noedit
+{
+   display: none;
+   
+
+
+   }
+}
