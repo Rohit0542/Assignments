@@ -1,0 +1,36 @@
+.imgSize {
+  height: 25px;
+  width: 25px;
+};
+
+.alert {
+  margin-bottom: 25px;
+};
+
+.placeTable {
+  width: 70%;
+  margin: 80px auto;
+}
+.heading {
+  font-size: 21px;
+  font-weight: bold;
+  padding: 30px 20px 30px 40px;
+}
+
+.container  {
+  width: 75%;
+  margin: 10px auto;
+}
+
+.tableHead {
+  background-color: black;
+  color: white;
+}
+
+Table .MuiTableCell-head {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+
